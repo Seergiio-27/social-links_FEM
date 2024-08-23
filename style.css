@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Root values */
+
+:root {
+    --clr-green-300: hsl(75, 94%, 57%);
+
+    --clr-white-100: hsl(0, 0%, 100%);
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+
+    --fs-body: 0.875rem;
+
+    --ff-main:"Inter", sans-serif;
+
+    --fw-normal: 400;
+    --fw-medium: 600;
+    --fw-bold: 700;
+}
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-main);
+    font-size: var(--fs-body);
+    background: var(--clr-grey-900);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    background: var(--clr-grey-800);
+    width: 400px;
+    margin-block: 1.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+/* Text Styling */
+
+.about {
+    display: grid;
+    gap: 1rem;
+    font-weight: var(--fw-medium);
+}
+.about span {
+    color: var(--clr-green-300);
+    font-weight: var(--fw-medium);
+}
+.occupation {
+    margin-top: 2rem;
+    color: rgb(219, 219, 219);
+}
+
+/* Image Styling */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-block: 1rem;
+    border-radius: 50%;
+    width: 100px;
+}
+
+/* Button Styling */
+
+.social-media {
+    display: grid;
+    gap: 1rem;
+    margin-block: 2rem;
+}
+
+button {
+    border: none;
+    margin-inline: 2.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: var(--clr-grey-700);
+    color: var(--clr-white-100);
+
+    font-weight: var(--fw-medium);
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all 0.3s ease ;
+    background: var(--clr-green-300);
+    color: var(--clr-grey-900);
+}
+
+/* Attribution Styling */
+
+a {
+    text-decoration: none;
+    color: var(--clr-green-300) !important;
+    font-weight: var(--fw-medium);
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 300px;
+    }
+
+}
+
+
+
